@@ -1,0 +1,46 @@
+    /*Fonts*/
+    
+    @charset "UTF-8";
+    @font-face {
+        font-family: Rockwell;
+        src: url('../fonts/RockwellStd.ttf');
+    }
+    /*Body*/
+    
+    body {
+        background-color: #efefef;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 25px;
+        padding: 50px;
+        width: 800px;
+        height: 800px;
+        margin: 100px auto 25px auto;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    /*Containers*/
+    
+    #container>* {
+        background-color: #ffffff;
+    }
+    /*spacing block for part a because i couldn't use enter */
+    
+    .enter-space {
+        margin-bottom: 30px;
+        line-height: 20px;
+        font-family: sans-serif;
+    }
+    /*bottom of page info*/
+    
+    #info {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 17px;
+        color: #333;
+        width: 800px;
+        margin: 0 auto 100px auto;
+    }

@@ -1,0 +1,284 @@
+/*Fonts*/
+
+@charset "UTF-8";
+@font-face {
+    font-family: Rockwell;
+    src: url('../fonts/RockwellStd.ttf');
+}
+@font-face {
+    font-family: RItalic;
+    src: url('../fonts/RockwellStd-Italic.ttf')
+}
+@font-face {
+    font-family: RBold;
+    src: url('../fonts/RockwellStd-Bold.ttf')
+}
+@font-face {
+    font-family: RBoldItalic;
+    src: url('../fonts/RockwellStd-BoldItalic.ttf')
+}
+@font-face {
+    font-family: RLight;
+    src: url('../fonts/RockwellStd-Light.ttf')
+}
+@font-face {
+    font-family: RLightItalic;
+    src: url('../fonts/RockwellStd-LightItalic.ttf')
+}
+
+/*Body*/
+
+body {
+    background-color: #efefef;
+}
+
+/*Container of page layout template*/
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 50px;
+    width: 800px;
+    height: 800px;
+    margin: 100px auto 25px auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+#nut-table {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    line-height: 14px;
+}
+
+/*div boxes for RIGHT part b*/
+
+.a-title {
+    grid-column: 1/8;
+    grid-row: 3;
+    line-height: 0px;
+    margin-top: 100px;
+}
+.b-ingredients {
+    grid-column: 1/4;
+    grid-row: 4;
+    line-height: 20px;
+}
+.c-ingred {
+    grid-column: 5/8;
+    grid-row: 4;
+    line-height: 20px;
+}
+.d-nutrition {
+    grid-column: 5/8;
+    grid-row: 1/3;
+    line-height: 12px;
+    font-size: 9px;
+}
+.e-per {
+    line-height: 15px;
+    margin-bottom: 6px;
+    font-family: RItalic;
+}
+.f-daily {
+    text-align: right;
+}
+.h-bottom {
+    line-height: 20px;
+    grid-column: 1/8;
+    grid-row: 5;
+    text-align: center;
+}
+
+/*div boxes for nutrition table*/
+
+.header-english {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    text-align: center;
+    font-family: RItalic;
+}
+.header-french {
+    grid-column: 4/6;
+    grid-row: 1/1;
+    text-align: center;
+    font-family: RItalic;
+}
+.fat {
+    grid-column: 1/4;
+    grid-row: 2/2;
+}
+.fat-percent {
+    grid-column: 5/5;
+    grid-row: 2/2;
+}
+.saturated {
+    grid-column: 2/4;
+    grid-row: 3/3;
+}
+.saturated-percent {
+    grid-column: 5/5;
+    grid-row: 3/3;
+}
+.trans {
+    grid-column: 2/4;
+    grid-row: 4/4;
+}
+.carbohydrates {
+    grid-column: 1/4;
+    grid-row: 5/5;
+}
+.fibre {
+    grid-column: 2/4;
+    grid-row: 6/6;
+}
+.fibre-percent {
+    grid-column: 5/5;
+    grid-row: 6/6;
+}
+.sugars {
+    grid-column: 2/4;
+    grid-row: 7/7;
+}
+.sugars-percent {
+    grid-column: 5/5;
+    grid-row: 7/7;
+}
+.protein {
+    grid-column: 1/4;
+    grid-row: 8/8;
+}
+.cholesterol {
+    grid-column: 1/4;
+    grid-row: 9/9;
+}
+.sodium {
+    grid-column: 2/4;
+    grid-row: 10/10;
+}
+.sodium-percent {
+    grid-column: 5/5;
+    grid-row: 10/10;
+}
+.potassium {
+    grid-column: 2/4;
+    grid-row: 11/11;
+}
+.potassium-percent {
+    grid-column: 5/5;
+    grid-row: 11/11;
+}
+.calcium {
+    grid-column: 2/4;
+    grid-row: 12/12;
+}
+.calcium-percent {
+    grid-column: 5/5;
+    grid-row: 12/12;
+}
+.iron {
+    grid-column: 2/4;
+    grid-row: 13/13;
+}
+.iron-percent {
+    grid-column: 5/5;
+    grid-row: 13/13;
+}
+
+/*text in div boxes*/
+
+.hersheys {
+    line-height: 16px;
+    font-family: Rbold;
+}
+.since {
+    margin-left: 140px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.fringredients {
+    line-height: 16px;
+    margin-top: 0px;
+}
+.gramsize {
+    font-size: 16px;
+}
+.contains1 {
+    line-height: 20px;
+    font-family: Rockwell;
+    font-size: 15px;
+}
+.contains2 {
+    margin-top: 15px;
+    line-height: 20px;
+    font-family: Rockwell;
+    font-size: 15px;
+}
+.contained {
+    grid-column: 1/4;
+    grid-row: 2;
+    margin-top: 24px;
+}
+
+/*spacing blocks and formatting */
+
+.bottom-enter {
+    padding-bottom: 20px;
+    font-family: RItalic;
+    line-height: 14px;
+}
+.in-text-space {
+    padding: px;
+}
+.spacing {
+    margin-left: 10px;
+    font-family: Rockwell;
+}
+
+/*font change for part B*/
+
+body {
+    font-family: Rockwell;
+    font-size: 10pt;
+}
+
+/*font change for part C*/
+
+.bold {
+    font-family: RBold;
+}
+.italic {
+    font-family: RItalic;
+}
+.light {
+    font-family: RLight;
+}
+.light-italic {
+    font-family: RLightItalic;
+}
+.bold-italic {
+    font-family: RBoldItalic;
+}
+
+/*font size for part D*/
+
+.size-27 {
+    font-size: 37px;
+    line-height: 70px;
+}
+
+/*bottom of page assignment info*/
+
+#info {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #333;
+    width: 800px;
+    margin: 0 auto 100px auto;
+}

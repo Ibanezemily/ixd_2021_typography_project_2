@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+  background-color: #efefef;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  width: 800px;
+  height: 800px;
+  margin: 100px auto 25px auto;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#container>* {
+  font-family: Helvetica, sans-serif;
+  color: #333;
+  font-size: 12px;
+}
+
+#container h3 {
+  font-weight:bold;
+  font-size: 14px;
+}
+
+#info {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: #333;
+  width: 800px;
+  margin: 0 auto 100px auto;
+}
